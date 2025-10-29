@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <title>Semantic Table and Media List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    thead {
+      background-color: #e6e6e6;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    img, video, audio {
+      display: block;
+      margin-top: 10px;
+    }
+
+    video, audio {
+      width: 300px;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Semantic Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Roll Number</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Aryan</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Priya</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Ravi</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Heading between table and list -->
+  <h2>List of medias</h2>
+
+  <!-- Ordered List with Media -->
+  <ol>
+    <li>
+      Image:
+      <img src="https://picsum.photos/id/123/200/300" alt="Sample image from Picsum">
+    </li>
+    <li>
+      Video:
+      <video controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+    <li>
+      Audio:
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </li>
+  </ol>
 
 </body>
-
 </html>
